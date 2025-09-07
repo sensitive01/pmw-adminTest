@@ -58,7 +58,7 @@ import Menu from '@mui/material/Menu';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
-const UserDataTable = () => {
+const CustomerListTable = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
@@ -1863,7 +1863,7 @@ const UserDataTable = () => {
             {/* {currentTab === 1 && (
               <Box sx={{ p: 3 }}>
                 <Typography variant="h6" sx={{ mb: 3 }}>Vendor Spaces</Typography>
-                
+
                 {loadingSpaces ? (
                   <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 200 }}>
                     <CircularProgress />
@@ -1922,7 +1922,7 @@ const UserDataTable = () => {
                             </TableCell>
                             <TableCell>
                             <Typography variant="body2">Days Remaining: {space.subscriptionleft || 0}</Typography>
-                              
+
                               <Typography>
                                 {space.subscription === "true" ? 'Active' : 'Inactive'}
                               </Typography>
@@ -2860,4 +2860,4 @@ const UserDataTable = () => {
   );
 };
 
-export default UserDataTable;
+export default CustomerListTable;

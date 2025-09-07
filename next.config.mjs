@@ -2,30 +2,81 @@
 const nextConfig = {
   basePath: process.env.BASEPATH,
   eslint: {
-    ignoreDuringBuilds: true, 
+    ignoreDuringBuilds: true,
   },
+  // 🔑 Disable Google Fonts fetching at build time
+  optimizeFonts: false,
+
   async redirects() {
     return [
       {
         source: '/',
         destination: '/en/dashboards/crm',
         permanent: true,
-        locale: false
+        locale: false,
       },
       {
         source: '/:lang(en|fr|ar)',
         destination: '/:lang/dashboards/crm',
         permanent: true,
-        locale: false
+        locale: false,
       },
       {
         source: '/((?!(?:en|fr|ar|front-pages|favicon.ico)\\b)):path',
         destination: '/en/:path',
         permanent: true,
-        locale: false
-      }
+        locale: false,
+      },
     ]
-  }
+  },
 }
 
 export default nextConfig
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   basePath: process.env.BASEPATH,
+//   eslint: {
+//     ignoreDuringBuilds: true,
+//   },
+//   async redirects() {
+//     return [
+//       {
+//         source: '/',
+//         destination: '/en/dashboards/crm',
+//         permanent: true,
+//         locale: false
+//       },
+//       {
+//         source: '/:lang(en|fr|ar)',
+//         destination: '/:lang/dashboards/crm',
+//         permanent: true,
+//         locale: false
+//       },
+//       {
+//         source: '/((?!(?:en|fr|ar|front-pages|favicon.ico)\\b)):path',
+//         destination: '/en/:path',
+//         permanent: true,
+//         locale: false
+//       }
+//     ]
+//   }
+// }
+
+// export default nextConfig
