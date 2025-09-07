@@ -1,14 +1,20 @@
 // MUI Imports
+import ProductAddHeader from '@/views/apps/parking/vendors/add/ProductAddHeader'
+import ProductImage from '@/views/apps/parking/vendors/add/ProductImage'
+import ProductInformation from '@/views/apps/parking/vendors/add/ProductInformation'
+import ProductInventory from '@/views/apps/parking/vendors/add/ProductInventory'
+import ProductOrganize from '@/views/apps/parking/vendors/add/ProductOrganize'
+import ProductPricing from '@/views/apps/parking/vendors/add/ProductPricing'
+import ProductVariants from '@/views/apps/parking/vendors/add/ProductVariants'
 import Grid from '@mui/material/Grid2'
 
 // Component Imports
-import ProductAddHeader from '@views/apps/ecommerce/products/add/ProductAddHeader'
-import ProductInformation from '@views/apps/ecommerce/products/add/ProductInformation'
-import ProductImage from '@views/apps/ecommerce/products/add/ProductImage'
-import ProductVariants from '@views/apps/ecommerce/products/add/ProductVariants'
-import ProductInventory from '@views/apps/ecommerce/products/add/ProductInventory'
-import ProductPricing from '@views/apps/ecommerce/products/add/ProductPricing'
-import ProductOrganize from '@views/apps/ecommerce/products/add/ProductOrganize'
+// import ProductInformation from '@views/apps/ecommerce/products/add/ProductInformation'
+// import ProductImage from '@views/apps/ecommerce/products/add/ProductImage'
+// import ProductVariants from '@views/apps/ecommerce/products/add/ProductVariants'
+// import ProductInventory from '@views/apps/ecommerce/products/add/ProductInventory'
+// import ProductPricing from '@views/apps/ecommerce/products/add/ProductPricing'
+// import ProductOrganize from '@views/apps/ecommerce/products/add/ProductOrganize'
 
 const eCommerceProductsAdd = () => {
   return (

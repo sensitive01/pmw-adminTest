@@ -1,7 +1,20 @@
-import EcommerceDashboard from '../../apps/ecommerce/dashboard/page'
+// import EcommerceDashboard from '../../apps/ecommerce/dashboard/page'
+
+
+
+// const DashboardECommerce = () => {
+//   return <EcommerceDashboard />
+// }
+
+// export default DashboardECommerce
+
+
+import React from 'react'
 
 const DashboardECommerce = () => {
-  return <EcommerceDashboard />
+  return (
+    <div>Page is on testing</div>
+  )
 }
 
 export default DashboardECommerce

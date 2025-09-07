@@ -1,6 +1,8 @@
 import { redirect } from 'next/navigation'
 
-import OrderDetails from '@views/apps/ecommerce/orders/details'
+// import OrderDetails from '@views/apps/ecommerce/orders/details'
+import OrderDetails from '@views/apps/parking/bookings/details/OrderDetailsCard'
+
 
 // Add a blank line between import groups (external and internal)
 

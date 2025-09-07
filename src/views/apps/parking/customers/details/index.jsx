@@ -9,12 +9,15 @@ import CustomerDetailsHeader from './CustomerDetailsHeader'
 import CustomerLeftOverview from './customer-left-overview'
 import CustomerRight from './customer-right'
 
-const OverViewTab = dynamic(() => import('@views/apps/ecommerce/customers/details/customer-right/overview'))
-const SecurityTab = dynamic(() => import('@views/apps/ecommerce/customers/details/customer-right/security'))
-const NotificationsTab = dynamic(() => import('@views/apps/ecommerce/customers/details/customer-right/notification'))
+
+
+
+const OverViewTab = dynamic(() => import('@/views/apps/user/view/user-right/overview'))
+const SecurityTab = dynamic(() => import('./customer-right/security'))
+const NotificationsTab = dynamic(() => import('@/views/apps/user/view/user-right/notifications'))
 
 const AddressBillingTab = dynamic(
-  () => import('@views/apps/ecommerce/customers/details/customer-right/address-billing')
+  () => import('./customer-right/address-billing')
 )
 
 // Vars

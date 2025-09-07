@@ -1,15 +1,17 @@
 // Next Imports
 import dynamic from 'next/dynamic'
 
-// Component Imports
-import Settings from '@views/apps/ecommerce/settings'
+import Settings from '@/views/apps/parking/settings'
 
-const StoreDetailsTab = dynamic(() => import('@views/apps/ecommerce/settings/store-details'))
-const PaymentsTab = dynamic(() => import('@views/apps/ecommerce/settings/payments'))
-const CheckoutTab = dynamic(() => import('@views/apps/ecommerce/settings/checkout'))
-const ShippingDeliveryTab = dynamic(() => import('@views/apps/ecommerce/settings/ShippingDelivery'))
-const LocationsTab = dynamic(() => import('@views/apps/ecommerce/settings/locations'))
-const NotificationsTab = dynamic(() => import('@views/apps/ecommerce/settings/Notifications'))
+// Component Imports
+// import Settings from '@views/apps/ecommerce/settings'
+
+const StoreDetailsTab = dynamic(() => import('@/views/apps/parking/settings/store-details'))
+const PaymentsTab = dynamic(() => import('@/views/apps/parking/settings/payments'))
+const CheckoutTab = dynamic(() => import('@views/apps/parking/settings/checkout'))
+const ShippingDeliveryTab = dynamic(() => import('@views/apps/parking/settings/ShippingDelivery'))
+const LocationsTab = dynamic(() => import('@views/apps/parking/settings/locations'))
+const NotificationsTab = dynamic(() => import('@views/apps/parking/settings/Notifications'))
 
 // Vars
 const tabContentList = () => ({

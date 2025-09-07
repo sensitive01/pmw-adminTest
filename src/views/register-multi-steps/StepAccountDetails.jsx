@@ -223,14 +223,14 @@
 //       console.error("Invalid file type selected");
 //     }
 //   };
-  
-  
+
+
 //   // Handle change for account details fields
 //   const handleChange = (field, value) => {
 //     setAccountDetails(prev => ({ ...prev, [field]: value }));
 //   };
 
-  
+
 // return (
 //     <div className="p-4">
 //       <Typography variant="h5" className="mb-4">Account Information</Typography>
@@ -382,7 +382,10 @@ import { Controller, useForm } from 'react-hook-form';
 
 import CustomIconButton from '@/@core/components/mui/IconButton';
 import DirectionalIcon from '@components/DirectionalIcon';
-import ProductImage from '../apps/ecommerce/products/add/ProductImage';
+// import ProductImage from '../apps/ecommerce/products/add/ProductImage';
+ import ProductImage from '../apps/parking/vendors/add/ProductImage';
+
+
 import TermsAndConditionsPage from './privacy-terms';
 
 
@@ -527,9 +530,9 @@ const StepAccountDetails = ({ handlePrev, handleNext, accountDetails, setAccount
           </Grid>
           <br />
           <Grid item xs={12} style={{ marginBottom: '20px' }}>
-            <Button 
-              variant="contained" 
-              onClick={handleAddParkingEntry} 
+            <Button
+              variant="contained"
+              onClick={handleAddParkingEntry}
               startIcon={<i className="ri-add-line" />}
               disabled={!addButtonEnabled}
             >

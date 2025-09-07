@@ -2,12 +2,15 @@
 import Grid from '@mui/material/Grid2'
 
 // Component Imports
-import TotalReviews from '@views/apps/ecommerce/manage-reviews/TotalReviews'
-import ReviewsStatistics from '@views/apps/ecommerce/manage-reviews/ReviewsStatistics'
-import ManageReviewsTable from '@views/apps/ecommerce/manage-reviews/ManageReviewsTable'
+// import TotalReviews from '@views/apps/ecommerce/manage-reviews/TotalReviews'
+// import ReviewsStatistics from '@views/apps/ecommerce/manage-reviews/ReviewsStatistics'
+// import ManageReviewsTable from '@views/apps/ecommerce/manage-reviews/ManageReviewsTable'
 
 // Data Imports
 import { getEcommerceData } from '@/app/server/actions'
+import TotalReviews from '@/views/apps/parking/manage-reviews/TotalReviews'
+import ReviewsStatistics from '@/views/apps/parking/manage-reviews/ReviewsStatistics'
+import ManageReviewsTable from '@/views/apps/parking/manage-reviews/ManageReviewsTable'
 
 /**
  * ! If you need data using an API call, uncomment the below API code, update the `process.env.API_URL` variable in the

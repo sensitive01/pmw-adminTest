@@ -1,5 +1,6 @@
 // Component Imports
-import ProductCategoryTable from '@views/apps/ecommerce/products/category/ProductCategoryTable'
+
+import ProductCategoryTable from "@/views/apps/parking/vendors/category/ProductCategoryTable"
 
 const eCommerceProductsCategory = () => {
   return <ProductCategoryTable />
