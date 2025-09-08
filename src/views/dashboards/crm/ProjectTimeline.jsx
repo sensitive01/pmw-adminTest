@@ -1,8 +1,9 @@
 'use client'
 
 // Next Imports
-import dynamic from 'next/dynamic'
 import { useEffect, useState } from 'react'
+
+import dynamic from 'next/dynamic'
 
 // MUI Imports
 import Card from '@mui/material/Card'
@@ -15,13 +16,16 @@ import { useTheme } from '@mui/material/styles'
 // Components Imports
 import CustomAvatar from '@core/components/mui/Avatar'
 import OptionMenu from '@core/components/option-menu'
+
 const API_URL = process.env.NEXT_PUBLIC_API_URL
+
 // Styled Component Imports
 const AppReactApexCharts = dynamic(() => import('@/libs/styles/AppReactApexCharts'))
 
 const KycTimeline = () => {
   // Hooks
   const theme = useTheme()
+
   const [kycData, setKycData] = useState({
     count: 0,
     verified: 0,
@@ -29,6 +33,7 @@ const KycTimeline = () => {
     totalMonths: 0,
     monthlyData: []
   })
+
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
@@ -37,11 +42,13 @@ const KycTimeline = () => {
       try {
         // Fetch summary data
         const summaryResponse = await fetch(`${API_URL}/admin/kyc-summary`)
+
         if (!summaryResponse.ok) throw new Error('Failed to fetch summary data')
         const summaryData = await summaryResponse.json()
 
         // Fetch detailed KYC data
-        const detailsResponse = await fetch('https://api.parkmywheels.com/vendor/getallkyc')
+        const detailsResponse = await fetch(`${API_URL}/vendor/getallkyc`)
+
         if (!detailsResponse.ok) throw new Error('Failed to fetch detailed KYC data')
         const detailsData = await detailsResponse.json()
 
@@ -219,6 +226,7 @@ const KycTimeline = () => {
           <CardHeader
             title='Verification Summary'
             subheader={`From ${kycData.monthlyData[0]?.month || ''} to ${kycData.monthlyData[kycData.monthlyData.length - 1]?.month || ''}`}
+
           // action={<OptionMenu options={['Refresh', 'Export', 'Share']} />}
           />
           <CardContent className='flex flex-grow flex-col justify-center gap-6'>
